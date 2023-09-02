@@ -1,0 +1,142 @@
+*{
+    margin: 0;    /* Best practise to do */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    height: auto;
+    width: 100vw;
+    overflow-x: none;
+    /* margin: 2px; */
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* flex-wrap: wrap; */
+    
+    
+
+}
+
+.navcontainer{
+    /* width: 100vw; */
+    /* height: 40px; */
+    /* border: 4px solid black; */
+    /* display: flex; */
+    /* background-color: rgba(121, 121, 176, 0.574); */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+    
+}
+#navlogo{
+    font-size: 30px;
+    margin: 3px;
+    color: white;
+}
+#navlist{
+    font-size: 30px;
+    list-style:none;
+    position: relative;
+    display: flex;   /* here it will remove the style of an list[ex: dots that comes at start] */
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-right: 20px; */
+}
+a{
+    text-decoration: none;  /* here it will remove underline from the text of the anchor tag */
+    color: white;
+}
+
+#navitems{
+    display: flex;
+    gap: 20px;  /* it will give gap between the elements */
+    margin-right: 30px;
+}
+.footerbox{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-content: end; */
+}
+.footerbox p{
+    color: white;
+    font-size: 20px;
+
+}
+.contentbox{
+    width:95%;
+    /* height: 85%; */
+    margin: 100px;
+    /* margin-left: 100px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 50px;
+    box-shadow: 3px 3px 30px black;
+}
+#item1ing{
+    list-style-type:decimal;
+}
+#item2ing{
+    list-style-type:decimal;
+}
+
+.item1{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    /* width: 50%; */
+}
+.item2{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 10px; */
+    /* width: 50%; */
+}
+
+img{
+    border-radius: 50px;
+    border: 2px solid darkgreen;
+    margin-top: 10px;
+    margin-left: 200px;
+    box-shadow: 4px 4px 2px black;
+}
+.item2 .leftbox{
+    /* width: 50%; */
+    margin-left: 20px
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    
+}
+.rightbox img{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 20px; */
+    transition: all 2s 0s linear ;
+    
+    
+}
+.rightbox img:hover{
+    transform:scale(1.1) ;
+}
