@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./abs-1850926_1280.jpg);
+    /* background-position:center; */
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    height: 100px;
+    background-size: cover;
+    /* display: inline-block; */
+}
+.left{
+    /* background-color: aqua; */
+    color: white;
+}
+.mid{
+    /* background-color: blue; */
+    color: white;
+}
+.right{
+    /* background-color:red; */
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 1005;
+    height: 30px;
+    margin-top: 20px;
+
+}
+ul{
+    /* color: white; */
+    list-style-type: none;
+    font-size: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    /* margin: 10px; */width: 500px;
+    
+}
+.header{
+    /* background-color:rgb(93, 158, 211); */
+    font-size: 20px;
+}
+.navbar li a:hover, .navbar li.active{
+    text-decoration: underline;
+    color: grey;
+}
+.left img{
+    height: 60px;
+    width: 80px;
+    position: relative;
+    top: 10px;
+    /* filter: invert(100%); */   /* To change the color from black to white or white to black */
+    /* background-blend-mode: screen; */
+}
+.btn{
+    margin: 10px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px soild rgb(145, 143, 143);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: chartreuse;
+    color: black;
+}
