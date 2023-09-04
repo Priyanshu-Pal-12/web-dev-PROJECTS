@@ -11,6 +11,8 @@ body{
     height: 100px;
     background-size: cover;
     /* display: inline-block; */
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .left{
     /* background-color: aqua; */
@@ -45,7 +47,7 @@ a{
 }
 .list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* flex-direction: row; */
     /* margin: 10px; */width: 500px;
     
@@ -59,10 +61,10 @@ a{
     color: grey;
 }
 .left img{
-    height: 60px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     position: relative;
-    top: 10px;
+    top: 50px;
     /* filter: invert(100%); */   /* To change the color from black to white or white to black */
     /* background-blend-mode: screen; */
 }
@@ -75,8 +77,55 @@ a{
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 .btn:hover{
     background-color: chartreuse;
     color: black;
+}
+
+.container{
+    /* border: 3px solid yellow; */
+    width: 65%;
+    height: auto;
+    border-radius: 40px;
+    color: white;
+    margin: 74px;
+    padding: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+.container input{
+    width: 50%;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+    /* font-weight: 900; */
+    /* color: rgb(0, 0, 0); */
+    /* text-decoration: double; */
+
+
+}
+#sub{
+    margin-top: 15px;
+    background-color: black;
+    color: yellow;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.left div{
+    /* top: 200px; */
+    /* margin-top: 55px; */
+    position: relative;
+    top: 50px;
 }
