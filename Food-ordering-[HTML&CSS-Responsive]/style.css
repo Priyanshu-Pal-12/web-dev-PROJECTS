@@ -3,11 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #navbar{
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
+    position: relative;
     /* height: var(--navbar-height); */    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;  /* here the content[black] will go back side of the actual text or image due to ]z-index]  */
 }
 #navbar ul{
     display: flex;
@@ -27,8 +38,106 @@
     width: 117px;
 }
 #navbar ul li a{
+    font-family: 'Baloo Bhaina 2', cursive;
     text-decoration: none;
-    font-size: 1.9rem;
+    font-weight: 700;
+    font-size: 2.3rem;
     padding: 4px 22px;
     /* display: block; */
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 633px;
+    /* position: relative; */
+}
+#home::before{
+    content: "";
+    background: url(./bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+    font-size: 5.8rem;
+    text-align: center;
+    font-weight:bolder;
+    position: relative;
+    top: 30px;
+    /* font-family: 'Baloo Bhaina 2', cursive; */
+}
+#home p{
+    color: white;
+    font-size: 2.9rem;
+    text-align: center;
+    /* font-weight: 600; */
+    position: relative;
+    top: 59px;
+    font-family: 'Bree Serif', serif;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    text-align: center;
+    position: relative;
+    top: 90px;
+    border-radius: 20px;
+    height: 80px;
+    width: 210px;
+    font-weight: 700;
+    font-size: 1.7rem;
+    /* padding: 5px 10px; */
+    /* margin: 90px; */
+    cursor: pointer;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+
+}
+#services{
+    display: flex;
+    /* margin-top: 500px; */
+    margin: 320px 100px;
+    /* padding: 10px; */
+    justify-content: space-between;
+}
+#services .box{
+    border: 4px solid brown;
+    /* gap: 10px; */
+    padding: 34px;
+    margin: 0px 30px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+.box p{
+    font-size: 1.6rem;
+}
+.services-container h1{
+    /* position: absolute; */
+    /* top: auto; */
+    /* left: 100px; */
 }
