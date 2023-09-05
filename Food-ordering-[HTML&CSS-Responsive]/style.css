@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* height: var(--navbar-height); */    
+}
+#navbar ul{
+    display: flex;
+    /* justify-content: center; */
+    /* padding: 60px; */
+    list-style-type: none;
+}
+:root{
+    --navbar-height:100px;
+}
+#logo{
+    margin: 35px 50px;
+}
+#logo img{
+    margin: -4px;
+    height: 94px;
+    width: 117px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 1.9rem;
+    padding: 4px 22px;
+    /* display: block; */
+}
