@@ -38,4 +38,6 @@ int main()
   else
   cout<<"Fail"<<endl;
 
+  return 0;
+
 }
