@@ -5,6 +5,7 @@ int main()
   // charcater takes 1byte [8bits]
   char p='p';
   cout<<p<<endl;
+  // priyanshu pal
 
   //variable take 4bytes [lbytes=8bits] it takes 32bits
   int a=10, b=20, c=30, d=40;
